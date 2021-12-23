@@ -1,0 +1,69 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+  background-color: #191D2B;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float:left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebarList {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebarList .row {
+  height: 60px;
+  width: 100%;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidebarList .row:hover{
+  cursor: pointer;
+  background-color: #0d6efd30;
+}
+
+.sidebarList #active {
+  background-color: #0d6efd70;
+}
+
+.content {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  position: relative;            
+  margin-left: 300px;
+}
+
+.layout {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  flex-direction: row;
+}
