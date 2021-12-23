@@ -6,12 +6,12 @@ function Layout(props: any) {
     console.log(props)
     return (
 
-            <div className="layout">                
+            <div className="app">                
                 <Sidebar2 />
-                <div className='content'>
+                <main className='content'>
                     {props.children}
                 
-                </div>
+                </main>
             </div>
         
     )

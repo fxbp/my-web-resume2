@@ -1,13 +1,20 @@
-.App {
+
+
+.app {
+  display: flex;
+  position:relative
+}
+
+#root, .app{
   height: 100vh;
-  width: 100vw;
 }
 
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
-
+/*
 .sidebar {
   height: 100%;
   width: 300px;
@@ -16,9 +23,46 @@ body {
   flex-direction: row;
   align-items: center;
   float:left;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
+}
+*/
+
+.app main{
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar{
+  
+  height: 100%;
+  width: 300px;
+  min-width: 300px;
+  position: relative;
+  z-index:1009;
+}
+
+.sidebar-inner {
+  background-color: #191D2B;
+  height: 100%;
+  position: relative;
+}
+
+.sidebar-layout {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  flex-grow: 1;
 }
 
 .sidebarList {
@@ -26,6 +70,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  flex-grow: 1;
 }
 
 .sidebarList .row {
@@ -50,15 +95,18 @@ body {
 .sidebarList #active {
   background-color: #0d6efd70;
 }
-
+/*
 .content {
   height: auto;
   padding: 0;
   margin: 0;
-  width: auto;
-  position: relative;            
+  left: 300px;
+  width: calc(100% - 300px);
+  position: absolute;            
   margin-left: 300px;
+  display: flex;
 }
+*/
 
 .layout {
   height: 100vh;
@@ -67,3 +115,6 @@ body {
   width: 100vw;
   flex-direction: row;
 }
+
+
+
