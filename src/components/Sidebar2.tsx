@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 import "../App.css"
+import SidebarHeader from './SidebarHeader'
 
 function Sidebar2() {
 
@@ -37,37 +38,35 @@ function Sidebar2() {
 
 
     return (
-        <div className='sidebar md'>
+        <nav className='sidebar md'>
             <div className='sidebar-inner'>
-                <div className='sidebar-layout'>
-                    <div>htest</div>
-                    <div className='sidebar-content'>
-                    <List className='sidebarList'>
-                        {
-                            SidebarData.map((item,key) =>{
-                                return (
-                                    <ListItem 
-                                        id={window.location.pathname === item.link? "active":""}
-                                        key={key}
-                                        className="row"
-                                        onClick={() => history(item.link)}
-                                        >
+                <SidebarHeader />
+                <div className='sidebar-content'>
+                <List className='sidebarList'>
+                    {
+                        SidebarData.map((item,key) =>{
+                            return (
+                                <ListItem 
+                                    id={window.location.pathname === item.link? "active":""}
+                                    key={key}
+                                    className="row"
+                                    onClick={() => history(item.link)}
+                                    >
 
-                                        <div className="title">
-                                            {item.title}
-                                        </div>
-                                    </ListItem>
-                                )
-                            })
-                        }
-                    </List>
-                    </div>
-                    <div>
-                        hola
-                    </div>
+                                    <div className="title">
+                                        {item.title}
+                                    </div>
+                                </ListItem>
+                            )
+                        })
+                    }
+                </List>
+                </div>
+                <div>
+                    
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 

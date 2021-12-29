@@ -2,6 +2,8 @@ import React from 'react'
 
 import Sidebar2 from './Sidebar2'
 
+import "../App.css"
+
 function Layout(props: any) {
     console.log(props)
     return (

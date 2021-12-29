@@ -1,33 +1,30 @@
+.circle {
+  border: 1px solid blue;
+  border-radius: 60px;
 
+  padding: 0.5em 0.6em;
+  
+}
 
 .app {
   display: flex;
-  position:relative
+  position:relative;
+  padding-left: 300px;
 }
 
-#root, .app{
-  height: 100vh;
+
+#root {
+  position: relative;
 }
 
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  background: #15202be1;
+  color: #f2f2f2;
+  font-family: "librebaskerville-bold", serif;
 }
-/*
-.sidebar {
-  height: 100%;
-  width: 300px;
-  background-color: #191D2B;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  float:left;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-*/
 
 .app main{
   padding: 20px;
@@ -39,74 +36,73 @@ body {
 
 .sidebar{
   
-  height: 100%;
+  height: 100vh;
   width: 300px;
   min-width: 300px;
-  position: relative;
+  overflow-y: auto;
+  overflow: hidden;
+  position:fixed;
+  left: 0;
+  top: 0;
   z-index:1009;
 }
 
 .sidebar-inner {
-  background-color: #191D2B;
+  background-color: #15202B;
   height: 100%;
-  position: relative;
+  min-width: 300px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-.sidebar-layout {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .sidebar-content {
-  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .sidebarList {
   height: auto;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  flex-grow: 1;
+  width: auto;
 }
 
 .sidebarList .row {
+  margin: 5px 10px;
   height: 60px;
-  width: 100%;
+  width: auto;
   list-style-type: none;
-  margin: 0%;
+
   display: flex;
   flex-direction: row;
-  color: white;
   font-weight: bold;
   justify-content: center;
   align-items: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 0 #00BA7C70;
+  -webkit-transition: all ease-in-out 0.4s;
+	-moz-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
 }
 
 .sidebarList .row:hover{
-  cursor: pointer;
-  background-color: #0d6efd30;
+  color: #00BA7C;
+
+  box-shadow: inset 300px 0 0 0 #00BA7C70;
 }
 
+
+
 .sidebarList #active {
-  background-color: #0d6efd70;
+  color: inherit;
+  background-color: #00BA7C;
 }
-/*
-.content {
-  height: auto;
-  padding: 0;
-  margin: 0;
-  left: 300px;
-  width: calc(100% - 300px);
-  position: absolute;            
-  margin-left: 300px;
-  display: flex;
-}
-*/
+
 
 .layout {
   height: 100vh;

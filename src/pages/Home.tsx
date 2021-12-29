@@ -1,166 +1,18 @@
 import React from 'react'
-import '../App.css'
+import SocialNetwork from '../components/SocialNetwork'
+
+import "./Home.css"
+
 function Home() {
     return (
-        <div >
-            Helo worldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            <div >
-            Helo world
+        <div className='homeArea'>
+            <div className='homeContent'>
+                <h1>Hi, I am <span>Francesc Bullich</span></h1>
+                <p>I am a software engineer focused mainly on backend and DevOps development.  </p>
+                <SocialNetwork />
+            </div>
         </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        v<div >
-            Helo world
-        </div>
-
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>v
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        v
-        <var><div >
-            Helo world
-        </div>
-        <var>v<div >
-            Helo world
-        </div></var></var>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <var><var><div >
-            Helo world
-        </div><div >
-            Helo world
-        </div></var></var>
-
-        <div >
-            Helo world
-        </div>v
-        <div >
-            Helo world
-        </div>
-        v
-        <div >
-            Helo world
-        </div>
-        <var><div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <var><div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        <var><var>v</var></var></var></var>
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo world
-        </div>
-        v
-        vv
-
-        <div >
-            Helo world
-        </div>
-        <div >
-            Helo worlddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-        </div>v
-        <var><var></var></var>
-        </div>
-
+       
     )
 }
 

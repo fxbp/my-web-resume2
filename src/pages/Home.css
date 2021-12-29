@@ -1,0 +1,26 @@
+.homeContent h1{
+   color: #f2f2f2;
+}
+
+.homeContent h1 span{
+    color: #00BA7C;
+}
+
+.homeContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.homeContent p {
+    font-size: 1.25rem;
+}
+
+.homeArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

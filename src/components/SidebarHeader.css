@@ -1,0 +1,16 @@
+.headerImage {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #2e344e;
+}
+
+.headerImage img{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    border: 7px solid #2e344e;
+    cursor: pointer;
+}
