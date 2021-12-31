@@ -20,7 +20,7 @@ function SocialNetwork() {
                                 className="socialItem"
 
                             >
-                                <a href={element.link}>
+                                <a href={element.link} target='_blank'>
                                     {element.icon}
                                 </a>
 

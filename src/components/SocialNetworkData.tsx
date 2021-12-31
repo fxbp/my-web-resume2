@@ -11,7 +11,7 @@ export const SocialNetworkData = [
     },
     {
         title: "Github",
-        link: "/https://github.com/fxbp",
+        link: "https://github.com/fxbp",
         icon: <GitHubIcon />
     },
     {

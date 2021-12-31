@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className='homeArea'>
             <div className='homeContent'>
-                <h1>Hi, I am <span>Francesc Bullich</span></h1>
+                <h1>Hi, I am <span className='colorTheme'>Francesc Bullich</span></h1>
                 <p>I am a software engineer focused mainly on backend and DevOps development.  </p>
                 <SocialNetwork />
             </div>

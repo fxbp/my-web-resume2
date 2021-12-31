@@ -1,0 +1,43 @@
+.aboutContent{
+    justify-content: space-between;
+}
+
+
+.cell,.cellImg {
+    padding: 15px;
+    flex-grow: 1;
+
+}
+    
+
+.contentTitle span{
+    border-bottom: 3px solid #00BA7C;
+    padding-bottom: 16px;
+}
+
+
+.gridImage{
+    max-width: 100%;
+    min-width: 200px;
+}
+
+h3{
+    margin-top: 0;
+}
+
+
+.aboutList b{
+    min-width: 120px;
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
+}
+
+.aboutList b:after{
+    content: ":";
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+
+}
