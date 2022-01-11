@@ -11,6 +11,8 @@ import WorkIcon from '@mui/icons-material/Work';
 import { WorkInfo } from '../dataTypes/ResumeTypes'
 import CustomTimelineItem from './CustomTimelineItem';
 
+import { createTheme } from "@material-ui/core/styles";
+import { TimelineOppositeContent } from '@mui/lab';
 
 const workData:WorkInfo[] = [
     {
@@ -39,16 +41,20 @@ const workData:WorkInfo[] = [
     },
 
 ]
+ 
 
 
 function WorkTimeline() {
     return (
         <div >
-        <Timeline  >
+        <Timeline position='right'  >
             {
                 workData.map((item :WorkInfo, key) =>{
                     return(
-                        <TimelineItem key={key}>
+                        <TimelineItem key={key} >
+                            <TimelineOppositeContent style= {{ flex: 0}}>
+
+                            </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineDot>
                                     <WorkIcon />

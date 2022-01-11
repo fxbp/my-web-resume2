@@ -3,7 +3,8 @@ import React from 'react'
 
 import './About.css'
 
-import AboutImage from '../images/bg_default.jpg';
+import AboutImage from '../images/main-image.jpeg';
+
 import AboutInfo from '../components/AboutInfo';
 
 

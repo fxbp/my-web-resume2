@@ -1,0 +1,40 @@
+.timelineItem{
+    display: flex;
+    font-size: 18px;
+    line-height: 1;
+    width: 100%;
+    margin-bottom: 50px;
+
+
+}
+
+.timeLapse{
+    min-width: 300px;
+    margin-left: 10px;
+
+}
+
+
+.timelineItem  h5{
+    font-weight: 700;
+    color: #00BA7C;
+    font-size: 1.43rem;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.timelineItem  h6{
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+}
+
+.timeLapse h6{
+    font-size: 1rem;
+}
+
+
+.timelineItemContent{
+    width: 100%;
+}

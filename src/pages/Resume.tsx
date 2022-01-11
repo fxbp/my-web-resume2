@@ -18,7 +18,7 @@ function Resume() {
                 </div>
                 <Box flexGrow={1}>
                     <Grid container >
-                        <Grid item md={12} lg={6} className="">
+                        <Grid item className="">
                          <WorkTimeline />   
                         </Grid> 
                     </Grid>
