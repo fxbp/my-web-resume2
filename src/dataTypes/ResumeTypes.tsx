@@ -1,8 +1,13 @@
 
-export interface WorkInfo  {
+export interface TimelineInfo  {
 
-    workName: string,
+    name: string,
     timeLapse: string,
-    jobTitle: string,
+    title: string,
     description: string
+}
+
+export interface SkillInfo{
+    name:string,
+    value:number
 }

@@ -1,0 +1,15 @@
+.skillItem{
+  
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+.skillBar{
+    
+    height: 10px;
+}
+
+.MuiLinearProgress-barColorPrimary {
+    background-color: #00BA7C !important;
+    height: 10px;
+}

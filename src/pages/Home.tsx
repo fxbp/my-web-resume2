@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialNetwork from '../components/SocialNetwork'
+import SocialNetwork from '../components/SocialNetwork/SocialNetwork'
 
 import "./Home.css"
 
