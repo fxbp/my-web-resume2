@@ -1,7 +1,11 @@
 
+export interface SidebarDataItem  {
+    title: string;
+    link: string;
+}
 
 
-export const SidebarData = [
+export const SidebarData :SidebarDataItem[] = [
     {
         title: "Home",
         link: "/"

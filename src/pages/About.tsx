@@ -19,11 +19,11 @@ function About() {
                 <h2><span>About me</span></h2>
             </div>
             <Box flexGrow={1} >
-                <Grid container >
-                    <Grid item md={12} lg={6} className="cellImg">
-                        <img  className="gridImage" src={AboutImage} />
+                <Grid container columns={{xs:1,md:2}} >
+                    <Grid item xs={1} className="cell">
+                        <img  className="gridImage" src={AboutImage} alt='Francesc Profile'/>
                     </Grid>
-                    <Grid item md={12} lg={6}  className="cell"> 
+                    <Grid item xs={1} className="cell"> 
                         <AboutInfo />
                     </Grid> 
                 </Grid>

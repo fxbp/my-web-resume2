@@ -5,11 +5,11 @@
 
 .content-full {
   padding-left: 0 !important;
-  padding: 20px
+  
 }
 
 .contentSection {
-  padding-top: 100px;
+  padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
@@ -43,12 +43,11 @@ body {
   height: 100vh;
   background: #15202be1;
   color: #f2f2f2;
-  font-family: "librebaskerville-bold", serif;
   font-size: 18px;
 }
 
 .app main{
-  padding: 20px;
+  
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -70,7 +69,7 @@ body {
   position:fixed;
   left: 0;
   top: 0;
-  transition: left 0.5s ease-in-out;
+  
   z-index:1009;
 }
 
@@ -159,4 +158,31 @@ h4 {
 }
 
 
+.iconMenu{
+  z-index: 1100;
+  position: fixed;
+  left: 300px;
+  top: 50px;
+  border: 1px solid #2e344e;
+  background-color: #15202be1;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
 
+.menuTranistion{
+  transition: ease-in-out 0.5s;
+}
+
+.iconMenu-left{
+  left: 0px ;
+}
+
+.iconMenu-hide{
+  visibility: hidden ;
+  transition: none;
+}

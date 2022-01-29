@@ -15,5 +15,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     min-height: 100vh;
+}
+
+.homeArea p {
+    text-align: center;
+}
+
+.homeArea h1 {
+    text-align: center;
 }

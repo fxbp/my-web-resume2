@@ -41,12 +41,9 @@ function AboutInfo() {
         let birthDate = aboutData[birthDateIndex];
         let newData = [...aboutData]
         if(birthDate){
-            console.log(birthDate)
-            console.log(new Date(birthDate.value))
             let age =  Date.now() - new Date(birthDate.value).getTime();
             const dateAge = new Date(age)
             let stringAge = Math.abs(dateAge.getUTCFullYear() - 1970).toString();
-            console.log(stringAge);
             stringAge=stringAge + " years";
             const newBirthDate={"field":birthDate.field, "value": stringAge};
             newData[birthDateIndex]=newBirthDate;
@@ -64,7 +61,7 @@ function AboutInfo() {
             <List>
                 {
                     info.map((item,key) => {
-                        console.log(item)
+                        
                         return(
                            
                             <ListItem disableGutters={true} key={key} className="aboutList">

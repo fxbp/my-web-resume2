@@ -1,12 +1,14 @@
 .aboutContent{
     justify-content: space-between;
+
 }
 
 
 .cell,.cellImg {
     padding: 15px;
     flex-grow: 1;
-
+    max-height: 60%;
+    max-width: 60%;
 }
     
 
@@ -17,10 +19,7 @@
 
 
 .gridImage{
-    max-width: 100%;
-    min-width: 200px;
-    height: 80%;
- 
+   width: 100%;
 }
 
 h3{

@@ -53,14 +53,7 @@ const skillData:SkillInfo[] = [
 
 function Skills() {
 
-
-    const middleItem:number = skillData.length/2;
-    const firstColumn:SkillInfo[] = skillData.slice(0,middleItem)
-    const secondColumn:SkillInfo[] = skillData.slice(middleItem)
-
-    console.log(middleItem)
-    console.log(firstColumn)
-    console.log(secondColumn)
+   
 
     return (
         <Grid container justifyContent="space-between" >
