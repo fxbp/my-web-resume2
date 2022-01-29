@@ -1,29 +1,51 @@
+import {List, ListItem } from '@material-ui/core'
 import React from 'react'
-import "../App.css"
-
 import { SidebarData } from "./SidebarData"
+import { useNavigate } from 'react-router-dom'
 
-function Sidebar() {
+
+import "../App.css"
+import SidebarHeader from './SidebarHeader'
+
+
+interface SidebarProps{
+    windowSmall: boolean
+}
+
+function Sidebar( { windowSmall }: SidebarProps ) {
+
+    const history = useNavigate();
+
     return (
-        <div className='sidebar'>
-            
-            <ul className='sidebarList'>
-            {
-            
-                SidebarData.map((item, key) => {
-                    return (<li 
-                                id={window.location.pathname === item.link? "active":""}
-                                className="row"
-                                key={key} 
-                                onClick={() => {window.location.pathname = item.link}}>
-                            <div id="title">{item.title}</div>
-                        </li>
-                    )
-                })
-            }
-            </ul>
-            
-        </div>
+        <nav className={ windowSmall?'sidebar md sidebar-left':'sidebar md ' }>
+            <div className='sidebar-inner'>
+                <SidebarHeader />
+                <div className='sidebar-content'>
+                <List className='sidebarList'>
+                    {
+                        SidebarData.map((item,key) =>{
+                            return (
+                                <ListItem 
+                                    id={window.location.pathname === item.link? "active":""}
+                                    key={key}
+                                    className="row"
+                                    onClick={() => history(item.link)}
+                                    >
+
+                                    <div className="title">
+                                        {item.title}
+                                    </div>
+                                </ListItem>
+                            )
+                        })
+                    }
+                </List>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </nav>
     )
 }
 

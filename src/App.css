@@ -1,5 +1,11 @@
 .content {
   overflow: hidden;
+  padding-left: 300px !important;
+}
+
+.content-full {
+  padding-left: 0 !important;
+  padding: 20px
 }
 
 .contentSection {
@@ -23,7 +29,7 @@
 .app {
   display: flex;
   position:relative;
-  padding-left: 300px;
+  
 }
 
 
@@ -50,7 +56,9 @@ body {
 }
 
 
-
+.sidebar-left {
+  left: -300px !important;
+}
 
 .sidebar{
   
@@ -62,6 +70,7 @@ body {
   position:fixed;
   left: 0;
   top: 0;
+  transition: left 0.5s ease-in-out;
   z-index:1009;
 }
 

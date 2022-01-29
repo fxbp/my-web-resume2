@@ -53,14 +53,15 @@ function AboutInfo() {
         }
         setInfo(newData)
        
-    },[info]);
+    },[]);
 
     return (
         <div >
             <h3>Hi, I am <span className='colorTheme'>Francesc Bullich</span></h3>
             <p>I am passionate about the world of computing. Throughout my professional life I have worked in different sectors, but what I like the most is software development.</p>
             <p>I like to work in a group and share knowledge while expressing my point of view.</p>
-            <p>I try to improve as a professional by exploring new challenges and learning from my teammates.</p>            <List>
+            <p>I try to improve as a professional by exploring new challenges and learning from my teammates.</p>            
+            <List>
                 {
                     info.map((item,key) => {
                         console.log(item)

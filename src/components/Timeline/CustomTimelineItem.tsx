@@ -1,3 +1,4 @@
+import { Grid } from '@material-ui/core'
 import React from 'react'
 
 
@@ -8,16 +9,17 @@ import './CustomTimelineItem.css'
 
 function CustomTimelineItem({timeLapse, title, name, description}:TimelineInfo) {
     return (
-        <div className='timelineItem'>
-            <div className="timeLapse">
+        <Grid container className='timelineItem' >
+            <Grid item  className="timeLapse" >
                 <h6>{timeLapse}</h6>
-            </div>
-            <div   className='timelineItemContent'>
+            </Grid>
+            <Grid item className='timelineItemContent'>
                 <h5>{name}</h5>
                 <h6>{title}</h6>
                 <p>{description}</p>
-            </div>
-        </div>
+            </Grid>
+        </Grid>
+        
     )
 }
 

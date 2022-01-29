@@ -14,28 +14,40 @@ const skillData:SkillInfo[] = [
         value: 90
     },
     {
-        name: "spring boot",
+        name: "Spring Boot",
         value: 80
     },
     {
-        name: "javascript",
+        name: "Javascript",
+        value: 85
+    },
+    {
+        name: "ExpressJS",
+        value: 80
+    },
+    {
+        name: "SQL",
         value: 90
     },
     {
-        name: "vb.net",
-        value: 90
+        name: "Git",
+        value: 85
     },
     {
-        name: "docker",
-        value: 90
+        name: "VB.NET",
+        value: 85
     },
     {
-        name: "docker-compose",
-        value: 90
+        name: "Docker",
+        value: 85
     },
     {
-        name: "kubernetes",
-        value: 90
+        name: "Kubernetes",
+        value: 85
+    },
+    {
+        name: "Bash",
+        value: 85
     }
 ]
 
@@ -55,7 +67,7 @@ function Skills() {
             {
                 skillData.map((element:SkillInfo,key) => {
                     return(
-                        <Grid key={key} item sm={12} md={6} className="skillItem" >
+                        <Grid key={key} item xs={12}  md={6} className="skillItem" >
                             <p>{element.name}</p>
                             <LinearProgress variant='determinate' value={element.value}  className="skillBar" />
                         </Grid>

@@ -10,7 +10,7 @@ function Resume() {
         <>
             <div  className='contentSection'>
                 <div className='contentTitle' >
-                    <h2><span>My Skills</span></h2>
+                    <h2><span className=''>My Skills</span></h2>
                 </div>
                 <Box flexGrow={1}>
                     <Skills />
