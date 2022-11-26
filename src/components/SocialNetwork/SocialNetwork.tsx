@@ -2,16 +2,12 @@ import React from 'react'
 
 import './SocialNetwork.css'
 
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
 import  {SocialNetworkData} from './SocialNetworkData';
 import { ListItem } from '@material-ui/core';
 
 function SocialNetwork() {
     return (
-        <div className='socialNetworkContent'>
-           
-
+        <div className='socialNetworkContent'>    
                 {
                     SocialNetworkData.map((element,key) =>{
                         return (
@@ -20,7 +16,7 @@ function SocialNetwork() {
                                 className="socialItem"
 
                             >
-                                <a href={element.link} target='_blank'>
+                                <a href={element.link} target='_blank' rel='noreferrer'>
                                     {element.icon}
                                 </a>
 

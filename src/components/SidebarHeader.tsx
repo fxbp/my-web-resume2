@@ -6,7 +6,6 @@ import ProfileImage from '../images/profile.jpeg'
 import "./SidebarHeader.css"
 
 
-
 function SidebarHeader() {
 
     const navigate = useNavigate();
@@ -19,7 +18,7 @@ function SidebarHeader() {
         <div className="headerImage">
             <img onClick={imageClick}
                 className='object-cover object-center rounded'
-                alt="profile image"
+                alt="Francesc profile"
                 src={ProfileImage}
                 />
         </div>
