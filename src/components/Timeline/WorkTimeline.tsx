@@ -8,11 +8,17 @@ import CustomTimeline from './CustomTimeline';
 
 
 const workData:TimelineInfo[] = [
+     {
+        name: "Accenture Spain",
+        timeLapse: "August 2022 - Present",
+        title: "Java Backend Developer",
+        description: "Backend development with Java and Spring Boot, contributing to service design, maintenance, and requirements analysis within a large-scale corporate architecture."
+    },
     {
         name: "éKratos Digital Systems",
-        timeLapse: "October 2020 - Present",
+        timeLapse: "October 2020 - July 2022",
         title: "Software Engineer",
-        description: "Development of backend services for the ekratos electronic voting platform with blockchain technology."
+        description: "Full-stack backend and DevOps engineering for a microservices-based electronic voting platform, including service development, cloud deployment, CI/CD automation, and Kubernetes-based operations."
     },
     {
         name: "Universitat de Girona",
